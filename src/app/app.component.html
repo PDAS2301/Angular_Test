@@ -1,0 +1,49 @@
+<H1>tHIS IS MY fIRST pROJECT</H1>
+<H1>{{title}}</H1>
+<p>{{count}}</p>
+<Button (click)="BtnClick()">Increment</Button>
+<Button (click)="BtndecreClick()">Decrement</Button>
+<button (click)="ResetClick()">Reset</button>
+<hr>
+
+<input type="text" (keyup)="Inputfun($event)" value={{name}} placeholder="Enter Your name">
+<P>{{name}}</P>
+<br />
+<br />
+
+
+
+<input [(ngModel)]="userInput" placeholder="Enter a value">
+<button (click)="displayValue()">Display Value</button>
+
+<br /><br />
+<button (click)="Clearlocalstorage()">Logout</button>
+<hr />
+<br /><br />
+<div>
+    <div>
+        <h1>Login Form for Local Storage</h1>
+        <input [(ngModel)]="Username" placeholder="Enter a Username" />
+        <br/> <br/>
+        <input [(ngModel)]="Password" placeholder="Enter a password"/>
+        <br /><br/>
+        <div>
+            <button (click)="Login()">Login</button>&nbsp;&nbsp;
+            <button (click)="Logout()">Logout</button>
+        </div>
+    </div>
+    <div>
+        <h1>Login Form for Session Storage</h1>
+        <input [(ngModel)]="SessionUsername" placeholder="Enter name" />
+        <br/><br/>
+        <input [(ngModel)]="SessionPassword" placeholder="Enter password" />
+        <br/><br/>
+        <div>
+          <button (click)="SLogin()">Session Login</button>&nbsp;&nbsp;
+          <button (click)="SLogout()">Session Logout</button> 
+        </div>
+
+    </div>
+
+        
+    </div>
